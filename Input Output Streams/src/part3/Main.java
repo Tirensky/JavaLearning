@@ -5,7 +5,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         File directory = new File("src/part3/");
-        File file1 = new File(directory, "names.txt");
+        File file1 = new File(directory, "text.txt");
 
         directory.mkdirs();
         file1.createNewFile();
