@@ -39834,7 +39834,3 @@ non-player characters, and complete quests to acquire experience points and gold
 increase Geralt's abilities and purchase equipment. The game's story has three possible endings, determined
 by the player's choices at key points in the narrative.
 
-Development began in 2011 and lasted for three and a half years. Central and Northern European cultures
-formed the basis of the game's world. The game was developed using the REDengine 3, which enabled CD
-Projekt to create a complex story without compromising its open world. The music was primarily composed
-by Marcin Przybyłowicz and performed by the Brandenburg State Orchestra.

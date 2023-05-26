@@ -8,12 +8,12 @@ import java.io.RandomAccessFile;
 public class Main {
     public static void main(String[] args) throws IOException {
         File directory = new File("src/part5/");
-        File file1 = new File(directory, "text.txt");
+        File file = new File(directory, "text.txt");
 
         directory.mkdirs();
-        file1.createNewFile();
+        file.createNewFile();
 
-        try (RandomAccessFile raf = new RandomAccessFile(file1, "rw")) {
+        try (RandomAccessFile raf = new RandomAccessFile(file, "rw")) {
             raf.seek(0);
             byte[] array = new byte[1024];
             raf.read(array);

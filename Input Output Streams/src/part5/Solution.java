@@ -9,12 +9,12 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) throws IOException {
         File directory = new File("src/part5/");
-        File file1 = new File(directory, "text.txt");
+        File file = new File(directory, "text.txt");
 
         directory.mkdirs();
-        file1.createNewFile();
+        file.createNewFile();
 
-        try (RandomAccessFile raf = new RandomAccessFile(file1, "r");
+        try (RandomAccessFile raf = new RandomAccessFile(file, "r");
              Scanner scanner = new Scanner(System.in)) {
             System.out.print("Select page: ");
             int page = scanner.nextInt();
