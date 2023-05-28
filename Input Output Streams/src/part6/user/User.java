@@ -1,4 +1,4 @@
-package part6;
+package part6.user;
 
 import java.io.Serializable;
 

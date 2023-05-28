@@ -1,4 +1,4 @@
-package part6;
+package part6.user;
 
 import java.io.*;
 
@@ -10,7 +10,7 @@ public class Main {
         user.setAge(25);
         user.setAddress(new Address("Main", 42));
 
-        File directory = new File("src/part6/");
+        File directory = new File("src/part6/user/");
         File file = new File(directory, "users.txt");
 
         directory.mkdirs();
