@@ -46,8 +46,6 @@ implements `Comparable<Car>`
 
 ## Описание интерфейса JList
 
-                     ?
-                     |
                JCollection<E>
                /
             JList<E>
@@ -83,6 +81,13 @@ extends `JCollection<E>`
 Как только все тесты будут написаны, напишем коллекцию `JArrayList`, которая является копией уже существующего `ArrayList` 
 
 ## Описание класса JArrayList
+
+                  
+               JCollection<E>
+               /
+            JList<E>
+            /
+        JArrayList<E>
 
 package `base.collection`;
 
