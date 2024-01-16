@@ -46,8 +46,6 @@ implements `Comparable<Car>`
 
 ## Описание интерфейса JList
 
-               JCollection<E>
-               /
             JList<E>
             
 package `base.collection`;
@@ -82,9 +80,6 @@ extends `JCollection<E>`
 
 ## Описание класса JArrayList
 
-                  
-               JCollection<E>
-               /
             JList<E>
             /
         JArrayList<E>
@@ -126,9 +121,7 @@ implements `JList<E>`
 ----------
 
 ## Описание класса JLinkedList
-    
-               JCollection<E>
-               /
+
             JList<E>
           /         \
     JArrayList<E>   JLinkedList<E>
