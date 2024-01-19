@@ -1,7 +1,7 @@
 package base.collection;
 
 public interface JQueue<E> extends JCollection<E> {
-    boolean add(Object e);
+    boolean add(E e);
 
     /**
      * Retrieves first element and remove it, or throw exception if queue is empty
