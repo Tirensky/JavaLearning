@@ -33,7 +33,7 @@ public class JLinkedList<E> implements JList<E>, JQueue<E> {
     }
 
     @Override
-    public boolean add(Object e) {
+    public boolean add(E e) {
         if (size == 0) {
             head = new Node(null, e, null);
             tail = head;
