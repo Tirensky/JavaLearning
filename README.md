@@ -16,7 +16,7 @@
 
 Исходя из этого, создадим класс **Car**, объекты которого будут храниться в кастомной коллекции 
 
-## Описание класса Car
+## Описание класса [Car](https://github.com/Tirensky/JavaLearning/blob/master/Collections/src/main/java/base/Car.java)
 
 package `base`
 
@@ -44,7 +44,7 @@ implements `Comparable<Car>`
 
 Теперь реализуем систему учёта на уровне абстракции. Напишем интерфейс, в котором мы объявим все необходимые методы, описывая то, что должна делать эта система.
 
-## Описание интерфейса JList
+## Описание интерфейса [JList](https://github.com/Tirensky/JavaLearning/blob/master/Collections/src/main/java/base/collection/JList.java)
 
             JList<E>
             
@@ -78,7 +78,7 @@ extends `JCollection<E>`
 
 Как только все тесты будут написаны, напишем коллекцию `JArrayList`, которая является копией уже существующего `ArrayList` 
 
-## Описание класса JArrayList
+## Описание класса [JArrayList](https://github.com/Tirensky/JavaLearning/blob/master/Collections/src/main/java/base/collection/JArrayList.java)
 
             JList<E>
             /
@@ -116,7 +116,7 @@ implements `JList<E>`
 Но при этом имеет минусы в виде медленного удаления элемента, медленной вставки в середину или начало коллекции. И самый главный минус - утечка памяти.
 Возникающая, когда внутренний размер массива не изменяется при удалении элементов. Но есть возможность исправить эти недостатки, создав новый вид коллекции, в основе которой лежит связный список. Назовём его соответствующе `JLinkedList`.
 
-## Описание класса JLinkedList
+## Описание класса [JLinkedList](https://github.com/Tirensky/JavaLearning/blob/master/Collections/src/main/java/base/collection/JLinkedList.java)
 
 `JLinkedList` представляет собой двусвязный список, в котором объекты будут хранится не во внутреннем массиве, но каждый элемент этого списка будет хранить ссылки на предыдущий и следующий элементы.
 По этим ссылкам можно переходить от одного элемента списка к другому. Также при удалении элемента из него не надо волноваться, что будет происходить утечка памяти как в случае с `JArrayList`. Если объёкт удалён и на него нет ссылок из стэка, им заёмётся сборщик мусора (Garbage Collector - GC). Также из-за того, что этот вид коллекции реализует интерфейс `JList` как и `JArrayList`, то не нужно писать дополнительные тесты. Есть и ещё кое-что о функциях этой коллекции, о чем подробнее будет описано позднее.
@@ -222,7 +222,7 @@ implements `JList<E>`, `JQueue<E>`
 
 Поэтому лучше создать отдельный вид коллекции, который не реализует интерфейс `JList` - это интерфейс `JSet`. Коллекции этого типа не могут хранить повторяющиеся элементы.
 
-## Описание интерфейса JSet
+## Описание интерфейса [JSet](https://github.com/Tirensky/JavaLearning/blob/master/Collections/src/main/java/base/collection/JSet.java)
 
             JSet<E>
             
@@ -250,7 +250,7 @@ extends `JCollection<E>`
 
 Как только все тесты будут написаны, напишем коллекцию `EHashSet`, которая является копией уже существующего `HashSet` 
 
-## Описание класса EHashSet
+## Описание класса [EHashSet](https://github.com/Tirensky/JavaLearning/blob/master/Collections/src/main/java/base/collection/EHashSet.java)
 
             JSet<E>
             /
